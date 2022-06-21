@@ -13,6 +13,7 @@
 
     <title>Ping coming soon page</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8500831f8a.js" crossorigin="anonymous"></script>
   </head>
   <body class="useBorderBox">
     <header>
@@ -21,6 +22,27 @@
     <article>
       <h1>We are launching <span>soon!</span></h1>
       <h2>Subscribe and get notified</h2>
+      <form action="#" class="useBorderBox">
+        <div id="email">
+          <input
+            id="emailInput"
+            class="useBorderBox"
+            type="email"
+            placeholder="Your email address..."
+          />
+          <div id="errorMessage" class="hidden"></div>
+        </div>
+        <button id="submitButton" type="email">Notify Me</button>
+      </form>
+
+      <section id="dashboard">
+        <img src="/images/illustration-dashboard.png" alt="" />
+      </section>
+      <ul id="socials" class="useBorderBox">
+        <li><i class="facebook"></i></li>
+        <li><i class="twitter"></i></li>
+        <li><i class="instagram"></i></li>
+      </ul>
     </article>
     <footer>&copy; Copyright Ping. All rights reserved.</footer>
     <p class="attribution">
@@ -32,4 +54,9 @@
       >. Coded by <a href="https://acmahaja.com">@acmahaja</a>.
     </p>
   </body>
+
+  <script>
+    const emailInput = document.getElementById("emailInput");
+    const submitButton = document.getElementById("submitButton");
+  </script>
 </html>
