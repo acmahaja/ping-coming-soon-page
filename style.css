@@ -23,6 +23,8 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100vw;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
 }
 
 body {
@@ -40,14 +42,46 @@ body {
 
 header {
   width: 100%;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+}
+
+header img {
+  height: 1.5em;
+  width: auto;
 }
 
 article {
   width: 100%;
-  height: 100px;
-  background-color: green;
+  height: calc(100% - 2.5em);
+  text-align: center;
+  padding-top: 2.75em;
+
+}
+
+article h1 {
+    font-size: 2.25em;
+    line-height: .75em;
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+article h1 span {
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+article h2 {
+font-size: 1.25em;
+font-weight: 300;
+}
+
+footer {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--Gray);
 }
 
 .attribution {
@@ -56,13 +90,12 @@ article {
 
   color: var(--Gray);
   font-weight: 600;
-  font-size: 1.25em;
-  font-family: "Libre Franklin", sans-serif;
+  font-size: 1em;
 
   position: absolute;
   bottom: 0;
 
-  padding-bottom: 1em;
+  padding-bottom: 0.25em;
   text-align: center;
 }
 .attribution a {
